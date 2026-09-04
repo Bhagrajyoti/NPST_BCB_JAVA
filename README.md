@@ -154,3 +154,5 @@ Before any of these services connects to a real CBS/Switch or goes live,
 confirm every item in the architecture doc's §7 Definition of Done —
 notably the checksum + idempotency-key contracts must match the NestJS
 side exactly (doc §6 lists what's still open there).
+
+#end
