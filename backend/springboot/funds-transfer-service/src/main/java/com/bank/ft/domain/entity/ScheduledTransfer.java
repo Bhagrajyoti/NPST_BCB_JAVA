@@ -76,6 +76,9 @@ public class ScheduledTransfer {
     @Column(nullable = false, length = 20)
     private ScheduleStatus status;
 
+    @Column(length = 255)
+    private String remarks;
+
     @Column(name = "last_execution_status", length = 20)
     private String lastExecutionStatus; // deliberately a plain string, not TransactionStatus — see schema doc's open item #5
 
