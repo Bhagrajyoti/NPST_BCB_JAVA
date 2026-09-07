@@ -34,38 +34,9 @@ public record CreateScheduledTransferRequest(
         Integer maxRetries,
 
         @FutureOrPresent
-        LocalDate endDate
+        LocalDate endDate,
 
-        @NotNull
-        String bankCode,
-
-        @NotNull
-        String transferDescription,
-
-        @NotNull
-        String transferReference,
-
-        @NotNull
-        String transferType,
-
-        @NotNull
-        String transferStatus,
-
-        @NotNull
-        String transferReason,
-
-        @NotNull
-        String transferReasonCode,
-        
-        @NotNull
-        String transferReasonDescription,
-
-        @NotNull
-        String transferReasonCodeDescription,
-        
-        
-        
-        
+        String remarks
 ) {
     @AssertTrue(message = "endDate must be null or on/after nextExecutionDate")
     public boolean isEndDateValid() {
